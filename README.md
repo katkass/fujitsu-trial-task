@@ -1,2 +1,2 @@
 # fujitsu-trial-task
-Java Programming Trial Task 2023
+Java, Spring, and H2 2023
