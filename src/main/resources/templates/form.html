@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery Fee Calculator</title>
+</head>
+<body>
+<div>
+    <h2>Delivery Fee Calculator</h2>
+    <form method="post" th:action="@{/processForm}" th:object="${weather}">
+        <label>City:</label>
+        <label>
+            <input type="radio" th:field="*{WMOCode}" th:value="26038">
+        </label>
+        <label>Tallinn</label>
+        <label>
+            <input type="radio" th:field="*{WMOCode}" th:value="26242">
+        </label>
+        <label>Tartu</label>
+        <label>
+            <input type="radio" th:field="*{WMOCode}" th:value="41803">
+        </label>
+        <label>Pärnu</label>
+        <br>
+
+        <div th:object="${fee}" >
+            <label>Vehicle:</label>
+            <label>
+                <input type="radio" th:field="*{vehicleType}" th:value="3">
+            </label>
+            <label>Car</label>
+            <label>
+                <input type="radio" th:field="*{vehicleType}" th:value="2.5">
+            </label>
+            <label>Scooter</label>
+            <label>
+                <input type="radio" th:field="*{vehicleType}" th:value="2">
+            </label>
+            <label>Bike</label>
+            <br>
+        </div>
+
+        <label>Time: </label>
+        <label>
+            <input type="number" th:field="*{Timestamp}" placeholder="">
+        </label>
+
+        <br>
+        <button type="submit">Calculate</button>
+    </form>
+</div>
+</body>
+</html>
