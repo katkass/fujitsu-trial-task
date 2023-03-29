@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery Fee Calculator</title>
+</head>
+<body>
+<div>
+    <h2>Delivery Fee Calculator</h2>
+    <span th:text="${fee.toString()}"></span>
+    <br>
+
+    <form action="/">
+        <button type="submit">Calculate again</button>
+    </form>
+</div>
+</body>
+</html>
