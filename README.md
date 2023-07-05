@@ -1,2 +1,2 @@
 # fujitsu-trial-task
-Java, Spring, and H2 2023
+Java, Spring Boot, and H2 2023
